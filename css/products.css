@@ -1,0 +1,12 @@
+.products-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.card {
+    margin: .5rem;
+}
+.card-img-top {
+    height: 320px;
+}
