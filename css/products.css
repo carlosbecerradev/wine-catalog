@@ -1,12 +1,68 @@
-.products-title {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
+.main-products {
+    background-color: var(--color-dark);
 }
+.main-title {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-secondary);
+}
+/* Options */
+.filters {
+    position: relative;
+}
+.filters-block {
+    position: absolute;
+    z-index: 1;
+    padding: 1rem 2rem;
+    display: block;
+    width: 300px;
+}
+summary {
+    display: block;
+    text-transform: uppercase;
+}
+summary::before {
+    content: '> ';
+}
+/* Cards */
 .card {
     margin: .5rem;
+    position: relative;
+}
+.card:hover .card-body {
+    transition: background-color .5s ease-in-out;
+    background-color: var(--color-primary);
 }
 .card-img-top {
-    height: 320px;
+    height: 260px;
+}
+.card-title {
+    font-weight: 700;
+    font-size: var(--text-medium);
+}
+.card-title::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 50%;
+    left: 25%;
+    height: .5rem;
+    border-bottom: 1px solid #fff;
+}
+
+.card-text {
+    font-size: 16px;
+}
+.btn-price {
+    font-weight: 500;
+}
+.btn-price::before {
+    content: 'S/. ';
+}
+/* Footer */
+.fa-chevron-up {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
 }

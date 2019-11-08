@@ -1,22 +1,32 @@
 :root {
-  --color-link: #444;
+  --color-link: #5f5f5f;
   --color-primary: #911431;
-  --color-secondary: #c47688;
-  --color-tertiary: #a2c0cd;
+  --color-secondary:  #a2c0cd;
+  /* #a2c0cd;*/
   --color-light: #e5e5e5;
   --color-dark: #2b2b33;
   --color-shadow: #2b2b3390;
   
   --font-playfair: 'Playfair Display', serif;
   --font-roboto: 'Roboto', sans-serif;
+
+  --text-small: 16px;
+  --text-medium: 20px;
 }
 /* Main navbar*/
+.nav-item {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.nav-link {
+  display: inline;
+}
 .fa-shopping-cart {
   font-size: 1.5rem;
 }
 .fa-shopping-cart:hover {
   text-align: right;
-  color: #fff;
+  color: var(--color-light);
 }
 /* Home */
 .header {
@@ -53,6 +63,12 @@
 .header-cta:hover {
   background-color: var(--color-primary);
 }
+
+/* Footer */
+.main-footer {
+  width: 100%;
+  color: var(--color-light);
+}
 /* Utils */
 .text-playfair {
   font-family: var(--font-playfair);
@@ -63,13 +79,20 @@
   font-family: var(--font-roboto);
   font-weight: 400;
 }
+.bgc-wine {
+  background-color: var(--color-primary);
+}
+.text-wine {
+  font-weight: 500;
+}
 /* generics */
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-roboto);
-  font-size: 18px;
+  background-color: var(--color-dark);
+  font-size: var(--text-small);
 }
 a, a:hover {
   text-decoration: none;
@@ -77,4 +100,36 @@ a, a:hover {
 }
 img {
   object-fit: cover;
+}
+/* theme */
+.btn-warning {
+  background-color:  var(--color-secondary) !important;
+}
+.text-warning {
+  color:  var(--color-secondary) !important;
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.btn-self {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+.btn-self:hover {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+/* Helpers */
+li[class*="active"] a {
+  font-weight: 500;
+  position: relative;
+  color: var(--color-secondary) !important;
+}
+li[class*="active"] a:before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-secondary);
 }
