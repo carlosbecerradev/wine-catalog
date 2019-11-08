@@ -1,13 +1,6 @@
 .main-products {
     background-color: var(--color-dark);
 }
-.main-title {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--color-secondary);
-}
 /* Options */
 .filters {
     position: relative;
@@ -15,16 +8,24 @@
 .filters-block {
     position: absolute;
     z-index: 1;
-    padding: 1rem 2rem;
-    display: block;
+    display: none;
     width: 300px;
+    background-color: var(--color-dark);
+}
+.filters-label {
+    color: var(--color-light);
 }
 summary {
     display: block;
+    padding: .5rem 1rem;
     text-transform: uppercase;
+    color: var(--color-secondary);
 }
-summary::before {
-    content: '> ';
+.sort-by-block {
+    background-color: var(--color-dark);
+}
+.sort-by-btn {
+    color: var(--color-secondary);
 }
 /* Cards */
 .card {
