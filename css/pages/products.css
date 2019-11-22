@@ -1,6 +1,9 @@
 .main-products {
     background-color: var(--color-dark);
 }
+.btn-option,.btn-option:hover {
+    color: var(--color-secondary);
+}
 /* Options */
 .filters {
     position: relative;
@@ -10,7 +13,7 @@
     z-index: 1;
     display: none;
     width: 300px;
-    background-color: var(--color-dark);
+    background-color: var(--color-primary) !important;
 }
 .filters-label {
     color: var(--color-light);
@@ -27,7 +30,10 @@ summary {
 .sort-by-btn {
     color: var(--color-secondary);
 }
-/* Cards */
+
+/* 
+    Cards 
+*/
 .card {
     margin: .5rem;
     position: relative;
@@ -37,7 +43,8 @@ summary {
     background-color: var(--color-primary);
 }
 .card-img-top {
-    height: 260px;
+    height: 100%;
+    
 }
 .card-title {
     font-weight: 700;
@@ -59,6 +66,14 @@ summary {
 .btn-price {
     font-weight: 500;
 }
+.btn-price {
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+.btn-price:hover {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
 .btn-price::before {
     content: 'S/. ';
 }
@@ -66,4 +81,9 @@ summary {
 .fa-chevron-up {
     font-size: 1.5rem;
     color: var(--color-secondary);
+}
+
+/* Descuento */
+.btn-price.descuento {
+
 }

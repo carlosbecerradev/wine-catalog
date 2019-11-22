@@ -1,11 +1,14 @@
+/*
+  Variables
+*/
 :root {
   --color-link: #5f5f5f;
-  --color-primary: #911431;
+  --color-primary: #0a495c;
   --color-secondary:  #a2c0cd; 
   /* #a2c0cd;*/
   /* #bbaca3 */
   --color-light: #e5e5e5;
-  --color-dark: #2b2b33;
+  --color-dark: #121212;
   --color-shadow: #2b2b3390;
   
   --font-playfair: 'Playfair Display', serif;
@@ -16,140 +19,6 @@
   --text-large: 28px;
   --text-xlarge: 48px;
 }
-/* 
-  Main navbar
-*/
-.navbar-brand {
-  color: var(--color-secondary) !important;
-}
-.navbar-brand:hover {
-  color: var(--color-light) !important;
-}
-.nav-item {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-.nav-link {
-  display: inline;
-}
-
-.carousel-indicators {
-  position: fixed;
-  margin: 0;  
-  margin-left: auto;
-  top: 50%;
-  right: 1%;
-  transform: translateY(-50%);
-  width: 20px;
-  flex-direction: column;
-}
-.carousel-indicators li {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-}
-.fa-shopping-cart {
-  font-size: 1.5rem;
-}
-.fa-shopping-cart:hover {
-  text-align: right;
-  color: var(--color-light);
-}
-/* 
-  Home 
-*/
-.header {
-  height: 100vh;
-  position: relative;
-}
-.carousel-header, .carousel-inner, .carousel-item {
-  height: 100%;
-}
-.header-img {
-  height: 100%;
-  width: 100%;
-  filter: brightness(40%) saturate(150%);
-}
-.header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 40%;
-  width: 480px;
-}
-.header-content-text {
-  position: absolute;
-  width: 100%;
-  top: 10%;
-  left: 0;
-  color: var(--color-light);
-  font-size: var(--text-large);
-  font-weight: 400;
-}
-.header-content-wine {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--color-secondary);
-  font-size: 10rem;
-}
-
-/* 
-  Footer 
-*/
-.main-footer {
-  width: 100%;
-  color: var(--color-light);
-}
-
-/* 
-  Utils 
-*/
-.text-playfair {
-  font-family: var(--font-playfair);
-  font-weight: 700;
-  letter-spacing: .2rem;
-}
-.text-roboto {
-  font-family: var(--font-roboto);
-  font-weight: 400;
-}
-.bgc-wine {
-  background-color: var(--color-primary);
-}
-.text-wine {
-  font-weight: 500;
-}
-.main-title {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--color-secondary);
-}
-
-/* 
-  generics 
-*/
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: var(--font-roboto);
-  background-color: var(--color-dark);
-  font-size: var(--text-small);
-}
-a, a:hover {
-  text-decoration: none;
-  color: var(--color-light);
-}
-img {
-  object-fit: cover;
-}
-
 
 /* 
   theme 
@@ -163,19 +32,20 @@ img {
 .text-secondary {
   color: var(--color-secondary);
 }
-.btn-self {
-  border: 1px solid var(--color-secondary);
-  color: var(--color-secondary);
+.bg-dark {
+  background-color: #1a1a1a !important; 
 }
-.btn-self:hover {
-  background-color: var(--color-light);
-  color: var(--color-primary);
+.border-bottom, .border-top {
+  border-color: var(--color-secondary) !important;
 }
-/* Helpers */
+
+/* 
+  Helpers 
+*/
 li[class*="active"] a {
   font-weight: 500;
   position: relative;
-  color: var(--color-light) !important;
+  color: var(--color-secondary) !important;
 }
 li[class*="active"] a:before {
   content: '';
@@ -183,7 +53,7 @@ li[class*="active"] a:before {
   bottom: 4px;
   left: 30%;
   width: 40%;
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-secondary);
   transition: .5s;
 }
 li[class*="active"]:hover a:before {
@@ -192,5 +62,5 @@ li[class*="active"]:hover a:before {
   bottom: 4px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-primary);
 }

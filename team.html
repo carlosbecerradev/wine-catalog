@@ -10,8 +10,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <!-- My css-->
+    <link rel="stylesheet" href="css/generics.css">
+    <!--My css-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/pages/team.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/nav.css">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/9dca648001.js" crossorigin="anonymous"></script>
     <title>Wine Store Catalog</title>
@@ -23,8 +28,9 @@
 <body>
 
     <header class="main-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent justify-content-end justify-content-md-between">
-            <a class="navbar-brand text-playfair mr-auto mr-md-0" href="#">WINEAL.</a>
+        <nav
+            class="navbar navbar-expand-md border-bottom navbar-dark bg-transparent justify-content-end justify-content-md-between">
+            <a class="navbar-brand text-playfair mr-auto mr-md-0" href="index.html">WINEALL.</a>
             <!-- <a href="#" class="order-md-2">
                 <span class="px-4"><i class="fas fa-shopping-cart"></i></span>
             </a> -->
@@ -32,16 +38,16 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse flex-grow-0 order-md-1" id="navbarNav">
-                <ul class="navbar-nav ml-auto text-right ml-md-0">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-none  text-right ml-md-auto">
                     <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="products.html">Catalog</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="team.html">Team</a>
+                        <a class="nav-link" href="team.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -50,17 +56,19 @@
 
     <main class="main-team">
         <div class="container-fluid">
-            <div class="py-4 text-center border-top">
+            <div class="py-4 text-center">
                 <h2 class="main-title text-playfair">Our Team</h2>
             </div>
         </div>
         <div class="team-area">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-team">
+                    <!--Becerra-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="single-team rounded bg-dark">
                             <div class="img-area">
-                                <img class="img-responsive" src="img/girl-1064664_1920.jpg" alt="">
+                                <img class="img-responsive rounded"
+                                    src="https://avatars2.githubusercontent.com/u/38837835?s=460&v=4" alt="">
                                 <div class="social-team">
                                     <ul class="list-inline">
                                         <li>
@@ -74,28 +82,26 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-linkedin"></i>
+                                            <a class="social-team-icon" href="mailto:example@gmail.com" target="_blank">
+                                                <i class="far fa-envelope"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="img-text">
-                                <h3 class="team-name text-playfair">Paty Cantu</h3>
-                                <h4 class="team-rol">Fronted Developer</h4>
+                                <h3 class="team-name text-playfair">Carlos Becerra</h3>
+                                <h4 class="team-rol">Frontend Developerr</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-team">
+                    <!--Guillen-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="single-team rounded bg-dark">
                             <div class="img-area">
-                                <img class="img-responsive" src="img/girl-1064664_1920.jpg" alt="">
+                                <img class="img-responsive rounded"
+                                    src="https://scontent.flim20-1.fna.fbcdn.net/v/t1.0-1/p160x160/72044326_10217319864660357_3749592524847579136_n.jpg?_nc_cat=104&_nc_ohc=G_AszdvB5FoAQnnmKoRNHsDRsCvAGojrvavIKNbH6GEgpIELRGMqNZjmQ&_nc_ht=scontent.flim20-1.fna&oh=0f22affdf51e7d090b76fbbfb88742ad&oe=5E44253F"
+                                    alt="">
                                 <div class="social-team">
                                     <ul class="list-inline">
                                         <li>
@@ -109,28 +115,26 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-linkedin"></i>
+                                            <a class="social-team-icon" href="mailto:example@gmail.com" target="_blank">
+                                                <i class="far fa-envelope"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="img-text">
-                                <h3 class="team-name text-playfair">Paty Cantu</h3>
-                                <h4 class="team-rol">Fronted Developer</h4>
+                                <h3 class="team-name text-playfair">Brian Guillen</h3>
+                                <h4 class="team-rol">Backend Developer</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-team">
+                    <!--Huarcaya-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="single-team rounded bg-dark">
                             <div class="img-area">
-                                <img class="img-responsive" src="img/girl-1064664_1920.jpg" alt="">
+                                <img class="img-responsive rounded"
+                                    src="https://scontent.flim20-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/67471986_852378205137316_7786099946083581952_n.jpg?_nc_cat=106&_nc_ohc=Uqpd7mLWYbMAQnHR52h0xbUoIpkNCxwtAH-puE7F7KWF3VeuBprHurP5A&_nc_ht=scontent.flim20-1.fna&oh=252701b7cb338a27b18e6e43bc78e710&oe=5E860D74"
+                                    alt="">
                                 <div class="social-team">
                                     <ul class="list-inline">
                                         <li>
@@ -144,21 +148,16 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-team-icon" href="#" target="_blank">
-                                                <i class="fab fa-linkedin"></i>
+                                            <a class="social-team-icon" href="mailto:example@gmail.com" target="_blank">
+                                                <i class="far fa-envelope"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="img-text">
-                                <h3 class="team-name text-playfair">Paty Cantu</h3>
-                                <h4 class="team-rol">Fronted Developer</h4>
+                                <h3 class="team-name text-playfair">Cristian Huarcaya</h3>
+                                <h4 class="team-rol">DBA</h4>
                             </div>
                         </div>
                     </div>
@@ -170,7 +169,7 @@
     <footer class="main-footer text-playfair mt-4">
         <div class="container-fluid">
             <div class="py-2 d-flex justify-content-between align-items-center border-top">
-                <span class="text-roboto">2019</span>
+                <span class="main-footer-year text-roboto">2019</span>
                 <span>WINEAL.</span>
                 <a href="#"><i class="fas fa-chevron-up"></i></a>
             </div>
