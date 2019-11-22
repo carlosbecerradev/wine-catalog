@@ -1,8 +1,9 @@
 :root {
   --color-link: #5f5f5f;
   --color-primary: #911431;
-  --color-secondary:  #a2c0cd;
+  --color-secondary:  #a2c0cd; 
   /* #a2c0cd;*/
+  /* #bbaca3 */
   --color-light: #e5e5e5;
   --color-dark: #2b2b33;
   --color-shadow: #2b2b3390;
@@ -12,14 +13,42 @@
 
   --text-small: 16px;
   --text-medium: 20px;
+  --text-large: 28px;
+  --text-xlarge: 48px;
 }
-/* Main navbar*/
+/* 
+  Main navbar
+*/
+.navbar-brand {
+  color: var(--color-secondary) !important;
+}
+.navbar-brand:hover {
+  color: var(--color-light) !important;
+}
 .nav-item {
   padding-top: .5rem;
   padding-bottom: .5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .nav-link {
   display: inline;
+}
+
+.carousel-indicators {
+  position: fixed;
+  margin: 0;  
+  margin-left: auto;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  width: 20px;
+  flex-direction: column;
+}
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 .fa-shopping-cart {
   font-size: 1.5rem;
@@ -28,7 +57,9 @@
   text-align: right;
   color: var(--color-light);
 }
-/* Home */
+/* 
+  Home 
+*/
 .header {
   height: 100vh;
   position: relative;
@@ -39,37 +70,44 @@
 .header-img {
   height: 100%;
   width: 100%;
-  filter: brightness(50%) saturate(150%);
+  filter: brightness(40%) saturate(150%);
 }
 .header-content {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  width: 480px;
+}
+.header-content-text {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  color: var(--color-light);
+  font-size: var(--text-large);
+  font-weight: 400;
+}
+.header-content-wine {
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-cta {
-  padding: .5rem 1.5rem;
-  color: var(--color-light);
-  border: 1px solid var(--color-light);
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: transparent;
-  transition: background-color .5s ease-in-out;
-}
-.header-cta:hover {
-  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 10rem;
 }
 
-/* Footer */
+/* 
+  Footer 
+*/
 .main-footer {
   width: 100%;
   color: var(--color-light);
 }
-/* Utils */
+
+/* 
+  Utils 
+*/
 .text-playfair {
   font-family: var(--font-playfair);
   font-weight: 700;
@@ -92,7 +130,10 @@
     text-align: center;
     color: var(--color-secondary);
 }
-/* generics */
+
+/* 
+  generics 
+*/
 html {
   scroll-behavior: smooth;
 }
@@ -108,7 +149,11 @@ a, a:hover {
 img {
   object-fit: cover;
 }
-/* theme */
+
+
+/* 
+  theme 
+*/
 .btn-warning {
   background-color:  var(--color-secondary) !important;
 }
@@ -133,6 +178,15 @@ li[class*="active"] a {
   color: var(--color-light) !important;
 }
 li[class*="active"] a:before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 30%;
+  width: 40%;
+  border-bottom: 1px solid var(--color-light);
+  transition: .5s;
+}
+li[class*="active"]:hover a:before {
   content: '';
   position: absolute;
   bottom: 4px;
