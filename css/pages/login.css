@@ -1,0 +1,10 @@
+.lbl-text {
+    color: var(--color-primary);
+}
+body {
+    background-color: var(--color-dark);
+    background-image: url(../../img/red-wine-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
