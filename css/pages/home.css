@@ -12,7 +12,7 @@
 .header-img {
   height: 100%;
   width: 100%;
-  filter: brightness(40%) saturate(150%);
+  filter: brightness(80%);
 }
 /* Header Content */
 .header-content {
@@ -35,15 +35,18 @@
 }
 .header-content-all {
   position: relative;
-  top: 2.5rem;
+  top: 2.1rem;
   margin-bottom: 0;
+  text-shadow: 0 1px 2px var(--color-primary),
+                1px 0 2px var(--color-primary);
 }
 .header-content-wine {
   position: relative;
-  font-size: 6rem;  
+  font-size: 5rem;  
   color: var(--color-secondary);
   transform-origin: center;
   text-transform: uppercase;
+  text-shadow: 0 1px 2px var(--color-primary);
 }
 .header-cta {
   position: relative;

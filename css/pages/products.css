@@ -1,5 +1,13 @@
-.main-products {
+body {
     background-color: var(--color-dark);
+    background-image: url(../../img/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+}
+.main-products {
+    /* background-color: var(--color-dark); */
 }
 .btn-option,.btn-option:hover {
     color: var(--color-secondary);

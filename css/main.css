@@ -4,10 +4,10 @@
 :root {
   --color-link: #5f5f5f;
   --color-primary: #5e2129;
-  --color-secondary:  #bbaca3; 
+  --color-secondary:  #fff; 
   /* #a2c0cd;*/
   /* #bbaca3 */
-  --color-light: #e5e5e5;
+  --color-light: #f5f5f5;
   --color-dark: #121212;
   --color-shadow: #2b2b3390;
   
@@ -36,7 +36,7 @@
   background-color: #1a1a1a !important; 
 }
 .border-bottom, .border-top {
-  border-color: var(--color-secondary) !important;
+  border-color: var(--color-light) !important;
 }
 
 /* 
@@ -62,5 +62,4 @@ li[class*="active"]:hover a:before {
   bottom: 4px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid var(--color-primary);
 }
